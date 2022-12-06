@@ -4,14 +4,16 @@
 #include<conio.h>
 
 void main(){
-    int i,sum=0,N;
-    printf("enter the range:");
+    int i=1,sum=0,N,count=1;
+    printf("enter the count of even numbers:");
     scanf("%d",&N);
-    for ( i = 1; i <=N; i++)
-    {
-        if(i%2==0){
-            sum+=i;
+    while(count<=N){
+        if(i%2 == 0){
+            sum +=i;
+            count++;
+            
         }
+        i++;
     }
     printf("Sum of even Natural Number is:%d",sum);
 }
